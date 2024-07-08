@@ -28,3 +28,8 @@
 ## [Extra] Inference for new data
 
 1. Create a streamlit app (or similar) to generate a prediction
+1. Create a dockerfile to host the streamlit app
+    - (Optional) Run the container locally
+    - Try being specific with your container requirements.
+1. Create a `deploy.yml` file to deploy the container to a target of your choosing
+    - Can you use other deployments you've done as context to help it create a new one?
