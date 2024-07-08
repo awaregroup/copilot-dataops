@@ -1,8 +1,12 @@
 # GitHub Copilot | AirNZ ML & Data Ops
 
+## Get started with Copilot
+
+1. Install the Copilot and Copilot Chat extensions.
 
 ## Simulate some data
 
+1. Which hyper-parameter is the least reasonable?
 1. Complete the simulator class
 1. Add type hints and documentation to the remaining
 1. Save the data
