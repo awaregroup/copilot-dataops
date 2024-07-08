@@ -2,7 +2,6 @@
 Gas Station Refueling example
 
 Covers:
-
 - Resources: Resource
 - Resources: Container
 - Waiting for other processes
@@ -15,7 +14,6 @@ Scenario:
   A gas station control process observes the gas station's fuel level
   and calls a tank truck for refueling if the station's level drops
   below a threshold.
-
 """
 import itertools
 import random
@@ -38,13 +36,7 @@ SIM_TIME = 1000000                      # Simulation time (seconds)
 times = []
 
 def plane(name, env, gas_station, station_tank):
-    """A plane arrives at the gas station for refueling.
-
-    It requests one of the gas station's fuel pumps and tries to get the
-    desired amount of fuel from it. If the station's fuel tank is
-    depleted, the plane has to wait for the tank truck to arrive.
-
-    """
+    # TODO: Docstring
     plane_tank_level = random.randint(*PLANE_TANK_LEVEL)
     logging.debug(f'{env.now:6.1f} s: {name} arrived at gas station')
 
@@ -70,11 +62,12 @@ def gas_station_control(env, station_tank):
     """Periodically check the level of the gas station tank and call the tank
     truck if the level falls below a threshold."""
     while True:
-        if station_tank.level / station_tank.capacity * 100 < THRESHOLD:
-            # We need to call the tank truck now!
-            logging.debug(f'{env.now:6.1f} s: Calling tank truck')
-            # Wait for the tank truck to arrive and refuel the station tank
-            yield env.process(tank_truck(env, station_tank))
+        # TODO: Add a condition to check if the station tank level is below the threshold
+
+        # We need to call the tank truck now!
+        logging.debug(f'{env.now:6.1f} s: Calling tank truck')
+        # Wait for the tank truck to arrive and refuel the station tank
+        yield env.process(tank_truck(env, station_tank))
 
         yield env.timeout(10)  # Check every 10 seconds
 
@@ -105,6 +98,6 @@ env.process(gas_station_control(env, station_tank))
 env.process(plane_generator(env, gas_station, station_tank))
 
 # Execute!
-env.run(until=SIM_TIME)
+# TODO run simulation for the time you want
 
 pd.DataFrame(times, columns=['entry_time', 'duration', 'fuel_litres']).to_csv('sim.csv', index=False)
