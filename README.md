@@ -1,4 +1,4 @@
-# GitHub Copilot | AirNZ ML & Data Ops
+# GitHub Copilot | ML & Data Ops
 
 ## Get started with Copilot
 
@@ -10,6 +10,7 @@
 1. Which hyper-parameter is the least reasonable?
 1. Add type hints to the functions
 1. Run the script and create data
+1. Introduce an error to your file, use the `/fix` command to resolve it.
 
 ## Exploratory data analysis
 
