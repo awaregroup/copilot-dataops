@@ -3,6 +3,7 @@
 ## Get started with Copilot
 
 1. Install the Copilot and Copilot Chat extensions.
+2. Open a new folder in VSCode, copy the [sim.py](https://github.com/awaregroup/copilot-dataops/blob/main/sim.py) into your workspace
 
 ## Simulate some data
 
