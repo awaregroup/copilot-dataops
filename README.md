@@ -7,6 +7,8 @@
 
 ## Simulate some data
 
+Question: You've been handed the `sim.py` from a data scientist leaving the company, and need to present their work to leadership in 2mins time, what does the code do???
+
 1. Complete the `# TODO:` comments with Copilot
 1. Which hyper-parameter is the least reasonable?
 1. Add type hints to the functions
