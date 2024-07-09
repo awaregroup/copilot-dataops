@@ -35,3 +35,8 @@
     - Try being specific with your container requirements.
 1. Create a `deploy.yml` file to deploy the container to a target of your choosing
     - Can you use other deployments you've done as context to help it create a new one?
+
+## [Extra extra] Do some conversions
+1. Python <> R
+2. SQL <> Python
+3. Upgrade package versions
